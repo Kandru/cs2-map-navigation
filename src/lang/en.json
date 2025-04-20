@@ -1,0 +1,6 @@
+{
+    "core.debugprint": "[MapNavigation][DEBUG]: {message}",
+    "core.config": "[MapNavigation] Configuration loaded",
+    "admin.unknown_command": "[MapNavigation] Unknown command: {command}",
+    "admin.reload": "[MapNavigation] Configuration reloaded"
+}
