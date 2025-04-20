@@ -11,8 +11,20 @@ namespace MapNavigation
         [CommandHelper(whoCanExecute: CommandUsage.CLIENT_AND_SERVER, minArgs: 0, usage: "<command>")]
         public void test(CCSPlayerController player, CommandInfo command)
         {
-            // get bombspots
-            InitiateBombspotPathfinding();
+            CNavMesh navMesh = new CNavMesh(NavMesh.GetNavMeshAddress());
+            List<CNavArea> navAreas = GetAllNavAreas(navMesh);
+            foreach (CNavArea area in navAreas)
+            {
+                Console.WriteLine($"Area ID: {area.ID}");
+            }
+        }
+
+        private List<CNavArea> GetAllNavAreas(CNavMesh navMesh)
+        {
+            List<CNavArea> navAreas = new List<CNavArea>();
+            for (int i = 0; i < navMesh.Count; i++)
+                navAreas.Add(navMesh[i]);
+            return navAreas;
         }
 
         [ConsoleCommand("mapnavigation", "MapNavigation admin commands")]
