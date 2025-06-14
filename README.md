@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This was just a test to check if something like this is possible and useful. CODE IS NOT OPTIMIZED. DO NOT EXPECT TO WORK ON YOUR SERVER.
+
 # CounterstrikeSharp - Map Navigation
 
 [![UpdateManager Compatible](https://img.shields.io/badge/CS2-UpdateManager-darkgreen)](https://github.com/Kandru/cs2-update-manager/)
@@ -7,8 +10,6 @@
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=C2AVYKGVP9TRG)
 
 A simple plug-in that will check the map and provide a navigation system towards the bomb spot(s), hostages and hostage rescue-zones.
-
-HINT: currently NOT READY
 
 ## Installation
 
